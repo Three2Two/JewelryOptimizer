@@ -6,13 +6,10 @@ Gemineye Emporium is a jewelry provider operating in the jewelry market. They ex
 
 Insights and recommendations are provided on the following key areas:
 
-- **Category 1:** Types of Jewelry presently being sold and the gender of their customers catered for most
-- **Category 2:** 
-- **Category 3:** 
-- **Category 4:** 
+- **Category 1:** Types of Jewelry presently being sold
+- **Category 2:** The gender of their customers catered for most in each of those categories 
 
-The code used for data preparation can be found here [link](https://github.com/Three2Two/JewelryOptimizer/blob/main/Jewelry_optimizer.ipynb#eda)
-.
+The code used for data preparation can be found here [link](https://github.com/Three2Two/JewelryOptimizer/blob/main/Jewelry_optimizer.ipynb#eda).
 
 Pipelines built for various model creations can be found here [link](https://github.com/Three2Two/JewelryOptimizer/blob/main/Jewelry_optimizer.ipynb#data-modelling).
 
@@ -32,79 +29,24 @@ The company's main database structure as seen below consists of 2 tables: with a
 
 ### Overview of Findings
 
-Explain the overarching findings, trends, and themes in 2-3 sentences here. This section should address the question: "If a stakeholder were to take away 3 main insights from your project, what are the most important things they should know?" You can put yourself in the shoes of a specific stakeholder - for example, a marketing manager or finance director - to think creatively about this section.
+Our analysis of jewelry sales reveals that over 95% of purchases were made by female customers, with earrings and pendants contributing to more than 50% of total sales. These two categories are the most frequently sold items, indicating a strong preference in the market.
 
-[Visualization, including a graph of overall trends or snapshot of a dashboard]
+Despite the wealth of data, the predictive models developed to understand customer behavior and sales patterns performed poorly, with the best model achieving only a 32% prediction accuracy. This underperformance is primarily attributed to the nature of the available features and the high skewness in pricing data.
 
-
-
-# Insights Deep Dive
-### Category 1:
-
-* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-
-[Visualization specific to category 1]
-
-
-### Category 2:
-
-* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-
-[Visualization specific to category 2]
-
-
-### Category 3:
-
-* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-
-[Visualization specific to category 3]
-
-
-### Category 4:
-
-* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-
-[Visualization specific to category 4]
+[Most sold jewelry items](https://github.com/Three2Two/JewelryOptimizer/blob/main/images/pendandear.png)
+[Male and female customers](https://github.com/Three2Two/JewelryOptimizer/blob/main/images/malenfemale.png)
 
 
 
 # Recommendations:
 
-Based on the insights and findings above, we would recommend the [stakeholder team] to consider the following: 
+Based on the insights and findings above, we would recommend Gemineye Emporium stakeholders to consider the following: 
 
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
+* More sales are being made to females than to males. **An ad campaign should be carried out to boost jewelry sales to more males.**
   
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
+* Earrings and rings were the main items being sold. **Other items like pendants could be sold as a set with earrings and rings to increase sales.**
   
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
-  
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
-  
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
+* **More features such as customer demographic and purchasing behavior should be added to ensure proper data integrity.**. This stems from the fact that the features present were not enough to build robust models with high predictive value. 
   
 
 
@@ -112,8 +54,6 @@ Based on the insights and findings above, we would recommend the [stakeholder te
 
 Throughout the analysis, multiple assumptions were made to manage challenges with the data. These assumptions and caveats are noted below:
 
-* Assumption 1 (ex: missing country records were for customers based in the US, and were re-coded to be US citizens)
+* **Assumption 1:** Missing values in the data were replaced with the most frequent in each column.
   
-* Assumption 1 (ex: data for December 2021 was missing - this was imputed using a combination of historical trends and December 2020 data)
-  
-* Assumption 1 (ex: because 3% of the refund date column contained non-sensical dates, these were excluded from the analysis)
+* **Assumption 2:** Categories in the jewelry category columns had numerical values and these were dropped from the data and this led to the loss of over 10k rows of data. 
