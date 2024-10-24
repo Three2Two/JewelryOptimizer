@@ -11,12 +11,12 @@ Insights and recommendations are provided on the following key areas:
 - **Category 3:** 
 - **Category 4:** 
 
-The code used for data preparation can be found here [link](https://github.com/Three2Two/jewelry-optimizer/blob/main/jewelry_optimizer.ipynb#eda)
+The code used for data preparation can be found here [link](https://github.com/Three2Two/JewelryOptimizer/blob/main/Jewelry_optimizer.ipynb#eda)
 .
 
-Pipelines built for various model creations can be found here [link](https://github.com/Three2Two/jewelryOptimizer/blob/main/jewelry-optimizer.ipynb#data-modelling).
+Pipelines built for various model creations can be found here [link](https://github.com/Three2Two/JewelryOptimizer/blob/main/Jewelry_optimizer.ipynb#data-modelling).
 
-Evaluation of the various models can be found here [link](https://github.com/Three2Two/jewelryOptimizer/blob/main/jewelry-optimizer.ipynb#model-eveluation).
+Evaluation of the various models can be found here [link](https://github.com/Three2Two/JewelryOptimizer/blob/main/Jewelry_optimizer.ipynb#model-eveluation).
 
 
 
