@@ -33,8 +33,8 @@ Our analysis of jewelry sales reveals that over 95% of purchases were made by fe
 
 Despite the wealth of data, the predictive models developed to understand customer behavior and sales patterns performed poorly, with the best model achieving only a 32% prediction accuracy. This underperformance is primarily attributed to the nature of the available features and the high skewness in pricing data.
 
-[Most sold jewelry items](https://github.com/Three2Two/JewelryOptimizer/blob/main/images/pendandear.png)
-[Male and female customers](https://github.com/Three2Two/JewelryOptimizer/blob/main/images/malenfemale.png)
+![Most sold jewelry items](https://github.com/Three2Two/JewelryOptimizer/blob/main/images/pendandear.png)
+![Male and female customers](https://github.com/Three2Two/JewelryOptimizer/blob/main/images/malenfemale.png)
 
 
 
